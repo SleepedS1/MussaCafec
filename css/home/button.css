@@ -2,7 +2,7 @@
 #inscribete-button{
     display: flex;
     justify-content: center;
-    width: auto;
+    width: fit-content;
     margin: 20px auto; /* Agrega espacio entre el contenedor de banners y el botón y centra el botón horizontalmente */
     padding: 15px 30px; /* Ajusta el tamaño del botón según tus necesidades */
     background-color: rgb(255, 255, 255); /* Cambia esto al color que desees para el botón */
