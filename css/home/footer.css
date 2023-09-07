@@ -1,0 +1,30 @@
+footer{
+    width: 100%;
+    height: fit-content;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img{
+    display: flex;
+    width: 400px;
+}
+
+.icons{
+    display: flex;
+    width: 50%;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.icons a{
+    text-decoration: none;
+}
+
+.icons a i{
+    display: flex;
+    color: #fff;
+    font-size: 1.8rem;
+}
