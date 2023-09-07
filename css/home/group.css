@@ -1,0 +1,29 @@
+#group{
+    width: 95%;
+    height: fit-content;
+    padding: 10px 10px;
+    margin: auto;
+}
+
+.cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.course{
+    width: 100%;
+    gap: 55px;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(209, 255, 255, 0.212);
+}
+
+.course .course-1, .course .course-2, .course .course-3, .course .course-4{
+    width: 50%;
+}
+
+.course img{
+    width: 100%;
+}
