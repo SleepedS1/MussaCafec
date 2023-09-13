@@ -1,0 +1,104 @@
+footer {
+    width: 100%;
+    padding: 25px 150px; 
+    gap: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.general{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 100%;
+    max-width: 400px;
+    height: auto; 
+    margin-bottom: 10px;
+}
+
+.icons {
+    width: 5%;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.icons a{
+    text-decoration: none;
+}
+
+.icons a i{
+    display: flex;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.contact{
+    width: 100% !important;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.contact h1{
+    font-weight: bolder;
+    color: #fff;
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:1500px) {
+    .footer {
+        display: flex;
+        padding: 25px 5%;
+    }
+    .contact{
+        margin: 0%;
+        width: 40%;
+    }
+    .contacto{
+        display: flex;
+        width: 90%;
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 910px) {
+    footer {
+        flex-direction: column; 
+        align-items: center;
+        padding: 25px 5%;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .icons {
+        width: 100%;
+        margin-top: 15px;
+        justify-content: center;
+    }
+    .general{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 35px;
+    }
+    
+}
