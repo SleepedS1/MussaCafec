@@ -1,0 +1,50 @@
+/* Estilo del contenedor de imágenes */
+.image-container, .image-wrapper, .banner-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid green;
+    max-width: 65%; /* Ajusta el tamaño máximo del contenedor según tus necesidades */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    height: auto; /* Ajusta automáticamente la altura */
+}
+
+/* Estilo de la imagen */
+#banner-image {
+    max-width: 100%; /* La imagen se ajustará al ancho máximo del contenedor */
+    max-height: 100%; /* Cambia el tamaño máximo de la imagen según tus necesidades */
+    transition: transform 0.1s ease;
+}
+
+/* Estilo de las flechas */
+.arrow, .arrow-left, .arrow-right {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+    background-color: rgba(77, 77, 77, 0.7);
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
+}
+
+@media (max-width:600) {
+    .image-container, .image-wrapper, .banner-container{
+        width: 100%;
+    }
+}
