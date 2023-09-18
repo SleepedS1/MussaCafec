@@ -1,0 +1,113 @@
+h1{
+    text-align: center;
+}
+
+#group{
+    width: 100%;
+    height: fit-content;
+    padding: 10px 0px 0px 0px;
+    margin: auto;
+}
+
+.cont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-g1, .course-g3{
+    width: 100%;
+    gap: 55px;
+    padding: 55px 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(208, 244, 255, 0.459);
+}
+
+.course-g2{
+    width: 100%;
+    gap: 55px;
+    padding: 55px 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.course-g1 a, .course-g2 a, .course-g3 a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #fff;
+}
+
+
+.course-g1 h3, .course-g2 h3, .course-g3 h3{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.course-text1, .course-text2, .course-text3{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-g1 img, .course-g2 img, .course-g3 img{
+    width: 98%;
+}
+
+.course-g1 .course-img1, .course-g2 .course-img2, .course-g3 .course-img3{
+    width: 50%;
+}
+
+.course-img1 img, .course-img2 img, .course-img3 img{
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+@media (max-width: 1000px) {
+    .course-g1,.course-g2,.course-g3{
+        gap: 5px;
+        padding: 10px;
+        flex-direction: column;
+    }
+    .course-text1, .course-text2, .course-text3{
+        width: 100%;
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .course-g1 .course-img1, .course-g2 .course-img2, .course-g3 .course-img3{
+        width: 70%;
+    }
+    .course-img1 img, .course-img2 img, .course-img3 img{
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .course-g1,.course-g2,.course-g3{
+        gap: 5px;
+        flex-direction: column;
+    }
+    .course-text1, .course-text2, .course-text3{
+        width: 100%;
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .course-g1 .course-img1, .course-g2 .course-img2, .course-g3 .course-img3{
+        width: 100%;
+    }
+    .course-img1 img, .course-img2 img, .course-img3 img{
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+}

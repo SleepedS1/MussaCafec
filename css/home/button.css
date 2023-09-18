@@ -1,0 +1,37 @@
+/* Estilo del botón "Inscríbete aquí" */
+#inscribete-button {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: 20px auto; /* Agrega espacio entre el contenedor de banners y el botón y centra el botón horizontalmente */
+    padding: 15px 30px; /* Ajusta el tamaño del botón según tus necesidades */
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px; /* Cambia el tamaño de fuente según tus necesidades */
+    transition: background-color 0.3s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+
+#buttons-nav button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#buttons-nav button:hover{
+    background-color: rgb(47, 143, 47);
+}
+
+#ingreso button{
+    background-color: #380;
+}
+
+#ingreso button:hover{
+    background-color: rgb(63, 172, 0);
+}
+#access a{
+    text-decoration: none;
+    color: #fff;
+}
