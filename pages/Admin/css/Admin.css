@@ -1,0 +1,174 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#admin-info {
+    font-size: 18px;
+}
+
+#logout-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#logout-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main{
+    width: 100%;
+    margin: auto;
+}
+
+/* Estilo de los botones */
+.buttons-container {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para las tablas */
+section{
+    width: 95%;
+    margin: auto;
+    background-color: #fff;
+    padding: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    overflow-x: auto; /* Hacer que la tabla sea desplazable horizontalmente en pantallas pequeñas */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilo para las tablas ocultas */
+.hidden {
+    display: none;
+}
+
+/* Añade estilos para hacer que la tabla sea responsiva */
+#table-container {
+    overflow-x: auto;
+}
+
+/* Añade estilos para los botones de descarga, actualización y eliminación */
+.download-button, .update-button, .delete-button {
+    width: 100px;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.download-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.update-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Consultas de medios para dispositivos móviles */
+@media (max-width: 1308px) {
+    /* Añade estilos para ajustar la tabla en pantallas pequeñas */
+    #table-container {
+        overflow-x: auto;
+        display: block;
+    }
+    main{
+        width: 90%;
+        margin: auto;
+    }
+    table {
+        width: 100%;
+        flex-direction: column;
+    }
+    th, td {
+        display: block;
+        width: 100%;
+    }
+    td, th {
+        text-align: center;
+    }
+    /* Añade estilos para que los botones se ajusten en pantallas pequeñas */
+    .download-button, .update-button, .delete-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .buttons-container{
+        gap: 5px;
+    }
+}
+
+@media (max-width: 690px) {
+    .buttons-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons-container button{
+        width: 90%;
+
+    }
+    main{
+        width: 90%;
+        margin: auto;
+    }
+}
+
