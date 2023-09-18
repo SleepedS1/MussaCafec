@@ -1,0 +1,97 @@
+#title{
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo general del navbar */
+.navbars {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: var(--color-navbar-bg); /* Utiliza la variable de color del navbar */
+    box-shadow: 0.1rem 0.8rem 0.9rem rgba(0,0,0,0.1)
+}
+
+
+/* Estilo del logo */
+.logo{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    gap: 55px;
+}
+
+.logo img {
+    width: 100px; /* Ajusta el tamaño de tu logo */
+}
+
+/* Estilo de los botones */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.nav-buttons button {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    color: #fff; /* Cambia esto al color de texto que desees para los botones */
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    background: none;
+    font-size: 1rem;
+    border-radius: 3px;
+    transition: 0.2s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-buttons a{
+    display: flex;
+    text-decoration: none;
+}
+
+.nav-buttons button:hover {
+    background-color: #777; /* Cambia esto al color de fondo que desees cuando se pasa el mouse sobre los botones */
+}
+
+.mobile-menu-button {
+    display: none;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbars {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+@media (max-width:350px) {
+    .navbars{
+        flex-direction: column;
+    }
+}
